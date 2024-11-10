@@ -3,7 +3,7 @@
 <BootstrapBlazorRoot>
     <Layout ShowGotoTop="true" ShowCollapseBar="true" ShowFooter="@ShowFooter" SideWidth="0"
             IsPage="true" IsFullSide="@IsFullSide" IsFixedHeader="@IsFixedHeader" IsFixedFooter="@IsFixedFooter"
-            TabDefaultUrl="/" UseTabSet="@UseTabSet" AdditionalAssemblies="new[] { GetType().Assembly, typeof(Client._Imports).Assembly }"
+            TabDefaultUrl="/" UseTabSet="@UseTabSet" AdditionalAssemblies="new[] { GetType().Assembly }"
             Menus="@Menus" class="@Theme">
         <Header>
             <span class="ms-3 flex-sm-fill d-none d-sm-block">Bootstrap of Blazor</span>
@@ -18,11 +18,11 @@
                     <LogoutLink />
                 </LinkTemplate>
             </Logout>
-            <div class="layout-drawer" @onclick="@(e => IsOpen = !IsOpen)"><i class="fa fa-gears"></i></div>
+            <div style="padding: 6px; cursor: pointer;" @onclick="@(e => IsOpen = !IsOpen)"><i class="fa fa-gears"></i></div>
         </Header>
         <Side>
             <div class="layout-banner">
-                <img class="layout-logo" src="favicon.png" />
+                <img class="layout-logo" src="./images/logo.png" />
                 <div class="layout-title">
                     <span>后台管理</span>
                 </div>
