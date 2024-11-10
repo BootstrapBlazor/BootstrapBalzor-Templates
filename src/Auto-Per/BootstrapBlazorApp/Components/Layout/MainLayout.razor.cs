@@ -5,6 +5,8 @@ namespace BootstrapBlazorApp.Components.Layout;
 
 public partial class MainLayout
 {
+    private bool UseTabSet { get; set; } = true;
+
     private string Theme { get; set; } = "";
 
     private bool IsFixedHeader { get; set; } = true;
