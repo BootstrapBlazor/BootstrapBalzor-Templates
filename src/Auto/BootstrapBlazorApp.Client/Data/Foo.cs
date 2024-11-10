@@ -74,7 +74,7 @@ public class Foo
     [Required(ErrorMessage = "请选择一种{0}")]
     [Display(Name = "爱好")]
     [AutoGenerateColumn(Order = 70)]
-    public IEnumerable<string> Hobbies { get; set; } = [];
+    public IEnumerable<string> Hobby { get; set; } = [];
 
     private static readonly Random random = new();
 
