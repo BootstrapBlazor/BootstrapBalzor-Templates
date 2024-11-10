@@ -12,7 +12,7 @@
                     </div>
                     <div class="ms-2">
                         <div class="d-flex position-relative">
-                            <h4>Argo Zhang</h4>
+                            <div class="flex-fill">Argo Zhang</div>
                             <small><i class="fa fa-clock-o"></i> @(4 + index) mins</small>
                         </div>
                         <div class="text-truncate">Why not buy a new awesome theme?</div>
@@ -47,24 +47,24 @@
         </HeaderTemplate>
         <BodyTemplate>
             <a href="#" class="dropdown-item" @onclick:preventDefault>
-                <h3 class="position-relative">
-                    Design some buttons
-                    <small class="pull-right">20%</small>
-                </h3>
+                <div class="d-flex">
+                    <div class="flex-fill pe-5">Design some buttons</div>
+                    <small>20%</small>
+                </div>
                 <Progress IsAnimated="true" IsStriped="true" Value="20" Color="Color.Primary"></Progress>
             </a>
             <a href="#" class="dropdown-item" @onclick:preventDefault>
-                <h3 class="position-relative">
-                    Create a nice theme
-                    <small class="pull-right">40%</small>
-                </h3>
+                <div class="d-flex">
+                    <div class="flex-fill pe-5">Create a nice theme</div>
+                    <small>40%</small>
+                </div>
                 <Progress Value="40" Color="Color.Success"></Progress>
             </a>
             <a href="#" class="dropdown-item" @onclick:preventDefault>
-                <h3 class="position-relative">
-                    Some task I need to do
-                    <small class="pull-right">60%</small>
-                </h3>
+                <div class="d-flex">
+                    <div class="flex-fill pe-5">Some task I need to do</div>
+                    <small>60%</small>
+                </div>
                 <Progress Value="60" Color="Color.Danger"></Progress>
             </a>
         </BodyTemplate>

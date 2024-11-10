@@ -18,7 +18,7 @@ public partial class TableDemo : ComponentBase
 
     private readonly ConcurrentDictionary<Foo, IEnumerable<SelectedItem>> _cache = new();
 
-    private IEnumerable<SelectedItem> GetHobbys(Foo item) => _cache.GetOrAdd(item, f => Foo.GenerateHobbys(Localizer));
+    private IEnumerable<SelectedItem> GetHobbies(Foo item) => _cache.GetOrAdd(item, f => Foo.GenerateHobbies(Localizer));
 
     private static IEnumerable<int> PageItemsSource => new int[] { 20, 40 };
 

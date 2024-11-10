@@ -16,11 +16,14 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="favicon.png">
     <base href="/" />
-    <Link Href="_content/BootstrapBlazor.FontAwesome/css/font-awesome.min.css" />
-    <Link Href="_content/BootstrapBlazor/css/bootstrap.blazor.bundle.min.css" />
-    <Link Href="_content/BootstrapBlazor/css/motronic.min.css" />
-    <Link Href="css/app.css" />
-    <Link Href="BootstrapBlazorApp.Server.styles.css" />
+
+    <link rel="stylesheet" href="@Assets["_content/BootstrapBlazor.FontAwesome/css/font-awesome.min.css"]" />
+    <link rel="stylesheet" href="@Assets["_content/BootstrapBlazor/css/bootstrap.blazor.bundle.min.css"]" />
+    <link rel="stylesheet" href="@Assets["_content/BootstrapBlazor/css/motronic.min.css"]" />
+    <link rel="stylesheet" href="@Assets["BootstrapBlazorApp.Server.styles.css"]" />
+    <link rel="stylesheet" href="@Assets["css/app.css"]" />
+    <ImportMap />
+
     <title>Bootstrap Blazor Server App</title>
     <HeadOutlet @rendermode="new InteractiveServerRenderMode(false)" />
 </head>
@@ -30,7 +33,7 @@
 
     <ReconnectorOutlet ReconnectInterval="5000" @rendermode="new InteractiveServerRenderMode(false)" />
 
-    <Script Src="_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.js"></Script>
+    <script Src="_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.js"></script>
     <script src="_framework/blazor.web.js"></script>
 </body>
 
