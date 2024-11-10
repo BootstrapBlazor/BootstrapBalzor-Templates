@@ -74,7 +74,7 @@ public class Foo
     [Required(ErrorMessage = "请选择一种{0}")]
     [Display(Name = "爱好")]
     [AutoGenerateColumn(Order = 70)]
-    public IEnumerable<string> Hobby { get; set; } = new List<string>();
+    public IEnumerable<string> Hobby { get; set; } = [];
 
     private static readonly Random random = new();
 
@@ -91,7 +91,7 @@ public class Foo
         Address = localizer["Foo.Address", $"{random.Next(1000, 2000)}"],
         Count = random.Next(1, 100),
         Complete = random.Next(1, 100) > 50,
-        Education = random.Next(1, 100) > 50 ? EnumEducation.Primary : EnumEducation.Middel
+        Education = random.Next(1, 100) > 50 ? EnumEducation.Primary : EnumEducation.Middle
     };
 
     /// <summary>
@@ -106,14 +106,14 @@ public class Foo
         Address = localizer["Foo.Address", $"{random.Next(1000, 2000)}"],
         Count = random.Next(1, 100),
         Complete = random.Next(1, 100) > 50,
-        Education = random.Next(1, 100) > 50 ? EnumEducation.Primary : EnumEducation.Middel
+        Education = random.Next(1, 100) > 50 ? EnumEducation.Primary : EnumEducation.Middle
     }).ToList();
 
     /// <summary>
     /// 
     /// </summary>
     /// <returns></returns>
-    public static IEnumerable<SelectedItem> GenerateHobbys(IStringLocalizer<Foo> localizer) => localizer["Hobbys"].Value.Split(",").Select(i => new SelectedItem(i, i)).ToList();
+    public static IEnumerable<SelectedItem> GenerateHobbies(IStringLocalizer<Foo> localizer) => localizer["Hobbies"].Value.Split(",").Select(i => new SelectedItem(i, i)).ToList();
 }
 
 /// <summary>
@@ -131,5 +131,5 @@ public enum EnumEducation
     ///
     /// </summary>
     [Display(Name = "中学")]
-    Middel
+    Middle
 }

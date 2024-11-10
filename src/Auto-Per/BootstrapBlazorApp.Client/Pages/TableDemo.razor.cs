@@ -18,7 +18,7 @@ public partial class TableDemo
 
     private readonly ConcurrentDictionary<Foo, IEnumerable<SelectedItem>> _cache = new();
 
-    private IEnumerable<SelectedItem> GetHobbys(Foo item) => _cache.GetOrAdd(item, f => Foo.GenerateHobbys(Localizer));
+    private IEnumerable<SelectedItem> GetHobbies(Foo item) => _cache.GetOrAdd(item, f => Foo.GenerateHobbies(Localizer));
 
     private static IEnumerable<int> PageItemsSource => new int[] { 20, 40 };
 
@@ -105,7 +105,6 @@ public partial class TableDemo
         {
             Items.Remove(foo);
         }
-
         return Task.FromResult(true);
     }
 }
