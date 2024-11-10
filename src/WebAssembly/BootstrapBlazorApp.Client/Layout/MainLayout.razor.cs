@@ -5,7 +5,7 @@ namespace BootstrapBlazorApp.Client.Layout;
 
 public partial class MainLayout
 {
-    private bool UseTabSet { get; set; } = false;
+    private bool UseTabSet { get; set; } = true;
 
     private string Theme { get; set; } = "";
 
