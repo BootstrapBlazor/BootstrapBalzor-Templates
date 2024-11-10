@@ -2,14 +2,14 @@
     height: calc(100vh - 82px - var(--bb-layout-footer-height) - var(--bb-tabs-item-height, 0px));
 }
 
-.table-users {
-    height: calc(100% - 93px);
-}
-
 .user-demo-address {
     margin-top: .25rem;
     font-size: 86%;
     color: #c0c4cc;
+}
+
+::deep .table-users {
+    height: calc(100% - 93px);
 }
 
 ::deep .table-cell img {
