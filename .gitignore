@@ -357,6 +357,7 @@ tools/
 
 # dotnet new template files
 template/auto/**/*
+
 !template/auto/.template.config/*
 
 template/auto-per/**/*
@@ -367,3 +368,5 @@ template/server/**/*
 
 template/webassembly/**/*
 !template/webassembly/.template.config/*
+
+!template/**/*.sln
