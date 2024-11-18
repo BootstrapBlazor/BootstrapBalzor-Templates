@@ -22,7 +22,9 @@ rm -rf $targetDir/Auto/BootstrapBlazorApp.Client
 rm -rf $targetDir/Auto-per/BootstrapBlazorApp
 rm -rf $targetDir/Auto-per/BootstrapBlazorApp.Client
 rm -rf $targetDir/Server/BootstrapBlazorApp.Server
-rm -rf $targetDir/WebAssembly/BootstrapBlazorApp.WebAssembly
+rm -rf $targetDir/WebAssembly/BootstrapBlazorApp
+rm -rf $targetDir/WebAssembly/BootstrapBlazorApp.Client
+rm -rf $targetDir/Wasm/BootstrapBlazorApp
 
 rm -rf $sourceDir/Auto/BootstrapBlazorApp/bin
 rm -rf $sourceDir/Auto/BootstrapBlazorApp/obj
@@ -42,6 +44,9 @@ rm -rf $sourceDir/WebAssembly/BootstrapBlazorApp/obj
 rm -rf $sourceDir/WebAssembly/BootstrapBlazorApp.Client/bin
 rm -rf $sourceDir/WebAssembly/BootstrapBlazorApp.Client/obj
 
+rm -rf $sourceDir/Wasm/BootstrapBlazorApp/bin
+rm -rf $sourceDir/Wasm/BootstrapBlazorApp/obj
+
 \cp -r $sourceDir/Auto/BootstrapBlazorApp/ $targetDir/auto/BootstrapBlazorApp/
 \cp -r $sourceDir/Auto/BootstrapBlazorApp.Client/ $targetDir/auto/BootstrapBlazorApp.Client/
 \cp $sourceDir/.editorconfig $targetDir/auto/
@@ -53,7 +58,11 @@ rm -rf $sourceDir/WebAssembly/BootstrapBlazorApp.Client/obj
 \cp -r $sourceDir/Server/BootstrapBlazorApp.Server/ $targetDir/server/BootstrapBlazorApp.Server/
 \cp $sourceDir/.editorconfig $targetDir/server/
 
-\cp -r $sourceDir/WebAssembly/BootstrapBlazorApp.WebAssembly/ $targetDir/webassembly/BootstrapBlazorApp.WebAssembly/
+\cp -r $sourceDir/WebAssembly/BootstrapBlazorApp/ $targetDir/webassembly/BootstrapBlazorApp/
+\cp -r $sourceDir/WebAssembly/BootstrapBlazorApp.Client/ $targetDir/webassembly/BootstrapBlazorApp.Client/
+\cp $sourceDir/.editorconfig $targetDir/webassembly/
+
+\cp -r $sourceDir/Wasm/BootstrapBlazorApp/ $targetDir/webassembly/BootstrapBlazorApp/
 \cp $sourceDir/.editorconfig $targetDir/webassembly/
 
 echo Sync success!
