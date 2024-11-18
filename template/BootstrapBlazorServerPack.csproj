@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageVersion>9.0.1</PackageVersion>
+    <PackageVersion>9.0.2</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -24,6 +24,7 @@
     <Content Include="auto-per\**\*" Exclude="auto-per\**\obj\**\*;auto-per\**\bin\**\*;auto-per\**\.vs\**\*" />
     <Content Include="server\**\*" Exclude="server\**\obj\**\*;server\**\bin\**\*;server\**\.vs\**\*" />
     <Content Include="webassembly\**\*" Exclude="webassembly\**\obj\**\*;webassembly\**\bin\**\*;webassembly\**\.vs\**\*" />
+    <Content Include="wasm\**\*" Exclude="wasm\**\obj\**\*;wasm\**\bin\**\*;wasm\**\.vs\**\*" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
