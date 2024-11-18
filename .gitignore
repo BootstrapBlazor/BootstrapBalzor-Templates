@@ -369,4 +369,7 @@ template/server/**/*
 template/webassembly/**/*
 !template/webassembly/.template.config/*
 
+template/wasm/**/*
+!template/wasm/.template.config/*
+
 !template/**/*.sln
