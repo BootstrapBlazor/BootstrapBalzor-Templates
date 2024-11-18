@@ -1,0 +1,22 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "argo@live.ca",
+  "classifications": [
+    "Common",
+    "C#",
+    "Web",
+    "Blazor"
+  ],
+  "identity": "BootstrapBlazorWasmStd",
+  "name": "Bootstrap Blazor WebAssembly Standalone App(Wasm)",
+  "description": "A project template for creating a Bootstrap Blazor app that runs on WebAssembly. This template can be used for web apps with rich dynamic user interfaces (Uls).",
+  "shortName": "bbapp-wasm-std",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "defaultName": "BootstrapBlazorApp",
+  "preferDefaultName": true,
+  "preferNameDirectory": true,
+  "sourceName": "BootstrapBlazorApp"
+}
