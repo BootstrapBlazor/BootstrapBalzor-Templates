@@ -357,19 +357,10 @@ tools/
 
 # dotnet new template files
 template/auto/**/*
-
-!template/auto/.template.config/*
-
 template/auto-per/**/*
-!template/auto-per/.template.config/*
-
 template/server/**/*
-!template/server/.template.config/*
-
 template/webassembly/**/*
-!template/webassembly/.template.config/*
-
 template/wasm/**/*
-!template/wasm/.template.config/*
 
+!template/**/.template.config/template.json
 !template/**/*.sln
