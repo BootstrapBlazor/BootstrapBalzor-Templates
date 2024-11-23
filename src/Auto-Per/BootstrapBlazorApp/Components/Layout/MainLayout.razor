@@ -1,10 +1,12 @@
 ﻿@inherits LayoutComponentBase
 
-<Layout ShowGotoTop="true" ShowCollapseBar="true" ShowFooter="@ShowFooter" SideWidth="0"
+<Layout ShowGotoTop="true" ShowCollapseBar="false" ShowFooter="@ShowFooter" SideWidth="0"
         IsPage="true" IsFullSide="@IsFullSide" IsFixedHeader="@IsFixedHeader" IsFixedFooter="@IsFixedFooter"
-        TabDefaultUrl="/" UseTabSet="@UseTabSet" AdditionalAssemblies="new[] { GetType().Assembly, typeof(BootstrapBlazorApp.Client._Imports).Assembly }"
-        Menus="@Menus" class="@Theme">
+        TabDefaultUrl="/" UseTabSet="false" Menus="Menus"
+        AdditionalAssemblies="new[] { GetType().Assembly, typeof(BootstrapBlazorApp.Client._Imports).Assembly }"
+        class="@Theme">
     <Header>
+        <CollapseBar></CollapseBar>
         <span class="ms-3 flex-sm-fill d-none d-sm-block">Bootstrap of Blazor</span>
         <div class="flex-fill d-sm-none">
         </div>
