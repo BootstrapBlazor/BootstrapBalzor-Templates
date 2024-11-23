@@ -1,0 +1,9 @@
+﻿@inherits BootstrapModuleComponentBase
+@attribute [JSModuleAutoLoader("./Components/Layout/CollapseBar.razor.js", AutoInvokeDispose = false)]
+@rendermode InteractiveServer
+
+<Tooltip Title="展开/收起菜单" Trigger="hover" Placement="Placement.Right">
+    <a id="@Id" class="layout-header-bar">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+</Tooltip>
