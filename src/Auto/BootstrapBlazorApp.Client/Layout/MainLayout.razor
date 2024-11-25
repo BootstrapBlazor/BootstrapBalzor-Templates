@@ -3,7 +3,7 @@
 <BootstrapBlazorRoot>
     <Layout ShowGotoTop="true" ShowCollapseBar="true" ShowFooter="@ShowFooter" SideWidth="0"
             IsPage="true" IsFullSide="@IsFullSide" IsFixedHeader="@IsFixedHeader" IsFixedFooter="@IsFixedFooter"
-            TabDefaultUrl="/" UseTabSet="@UseTabSet" AdditionalAssemblies="new[] { GetType().Assembly }"
+            TabDefaultUrl="/" UseTabSet="@UseTabSet" IsFixedTabHeader="IsFixedTabHeader" AdditionalAssemblies="new[] { GetType().Assembly }"
             Menus="@Menus" class="@Theme">
         <Header>
             <span class="ms-3 flex-sm-fill d-none d-sm-block">Bootstrap of Blazor</span>
@@ -84,6 +84,12 @@
                     </div>
                     <div class="col-6">
                         <span class="cell-label">@(UseTabSet ? "多标签" : "单页")</span>
+                    </div>
+                    <div class="col-6">
+                        <Switch @bind-Value="@IsFixedTabHeader" OnColor="@Color.Success"></Switch>
+                    </div>
+                    <div class="col-6">
+                        <span class="cell-label">固定标签页</span>
                     </div>
                 </div>
             </GroupBox>
