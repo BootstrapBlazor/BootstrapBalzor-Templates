@@ -13,6 +13,8 @@ public partial class MainLayout
 
     private bool IsFixedHeader { get; set; } = true;
 
+    private bool IsFixedTabHeader { get; set; } = true;
+
     private bool IsFixedFooter { get; set; } = true;
 
     private bool IsFullSide { get; set; } = true;
@@ -44,5 +46,12 @@ public partial class MainLayout
         };
 
         return menus;
+    }
+
+    private Task OnSideChanged(bool v)
+    {
+        IsFullSide = v;
+        StateHasChanged();
+        return Task.CompletedTask;
     }
 }
