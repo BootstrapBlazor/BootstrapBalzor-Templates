@@ -45,4 +45,11 @@ public partial class MainLayout
 
         return menus;
     }
+
+    private Task OnSideChanged(bool v)
+    {
+        IsFullSide = v;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
 }
