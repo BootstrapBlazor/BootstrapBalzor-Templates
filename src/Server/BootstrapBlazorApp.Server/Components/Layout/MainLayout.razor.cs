@@ -1,7 +1,7 @@
 ﻿using BootstrapBlazor.Components;
 using Microsoft.AspNetCore.Components.Routing;
 
-namespace BootstrapBlazorApp.Server.Components.Shared;
+namespace BootstrapBlazorApp.Server.Components.Layout;
 
 /// <summary>
 /// 
