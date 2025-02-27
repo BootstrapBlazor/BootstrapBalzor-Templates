@@ -29,6 +29,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseAntiforgery();
 
+builder.WebHost.UseStaticWebAssets();
 app.MapStaticAssets();
 app.MapRazorComponents<App>().AddInteractiveServerRenderMode();
 
