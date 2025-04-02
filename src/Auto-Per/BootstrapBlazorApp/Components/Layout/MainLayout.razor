@@ -5,14 +5,17 @@
         TabDefaultUrl="/" UseTabSet="false" IsFixedTabHeader="IsFixedTabHeader" Menus="Menus"
         ShowSplitebar="true" SidebarMinWidth="200" SidebarMaxWidth="350"
         TabStyle="TabStyle.Chrome" ShowToolbar="true" ShowTabContextMenu="true"
+        ShowTabInHeader="@ShowTabInHeader" ShowTabExtendButtons="false"
         AdditionalAssemblies="new[] { GetType().Assembly, typeof(BootstrapBlazorApp.Client._Imports).Assembly }"
         class="@Theme">
     <Header>
         <CollapseBar></CollapseBar>
-        <span class="ms-3 flex-sm-fill d-none d-sm-block">Bootstrap of Blazor</span>
-        <div class="flex-fill d-sm-none">
-        </div>
-        <Widget></Widget>
+        @if (ShowTabInHeader == false)
+        {
+            <span class="ms-3 flex-sm-fill d-none d-sm-block">Bootstrap of Blazor</span>
+            <div class="flex-fill d-sm-none"></div>
+            <Widget></Widget>
+        }
         <Logout ImageUrl="images/Argo-C.png" DisplayName="超级管理员" UserName="Admin">
             <LinkTemplate>
                 <a href="#"><i class="fa-solid fa-suitcase"></i>个人中心</a>

@@ -5,19 +5,23 @@
             IsPage="true" IsFullSide="@IsFullSide" IsFixedHeader="@IsFixedHeader" IsFixedFooter="@IsFixedFooter"
             ShowSplitebar="true" SidebarMinWidth="200" SidebarMaxWidth="350"
             TabStyle="TabStyle.Chrome" ShowToolbar="true" ShowTabContextMenu="true"
-            TabDefaultUrl="/" UseTabSet="@UseTabSet" IsFixedTabHeader="IsFixedTabHeader" AdditionalAssemblies="new[] { GetType().Assembly }"
+            ShowTabInHeader="@ShowTabInHeader" ShowTabExtendButtons="false"
+            TabDefaultUrl="/" UseTabSet="@UseTabSet" IsFixedTabHeader="IsFixedTabHeader"
+            AdditionalAssemblies="new[] { GetType().Assembly }"
             Menus="@Menus" class="@Theme">
         <Header>
-            <span class="ms-3 flex-sm-fill d-none d-sm-block">Bootstrap of Blazor</span>
-            <div class="flex-fill d-sm-none">
-            </div>
-            <Widget></Widget>
+            @if (ShowTabInHeader == false)
+            {
+                <span class="ms-3 flex-sm-fill d-none d-sm-block">Bootstrap of Blazor</span>
+                <div class="flex-fill d-sm-none"></div>
+                <Widget></Widget>
+            }
             <Logout ImageUrl="images/Argo-C.png" DisplayName="超级管理员" UserName="Admin">
                 <LinkTemplate>
                     <a href="#"><i class="fa-solid fa-suitcase"></i>个人中心</a>
                     <a href="#"><i class="fa-solid fa-cog"></i>设置</a>
                     <a href="#"><i class="fa-solid fa-bell"></i>通知<span class="badge badge-pill badge-success"></span></a>
-                    <LogoutLink />
+                    <LogoutLink></LogoutLink>
                 </LinkTemplate>
             </Logout>
             <div class="layout-drawer" @onclick="@(e => IsOpen = !IsOpen)"><i class="fa fa-gears"></i></div>
@@ -40,9 +44,6 @@
                 <a class="page-layout-demo-footer-link" href="https://pro.blazor.zone/" target="_blank">Bootstrap Admin</a>
             </div>
         </Footer>
-        <NotFound>
-            <p>Sorry, there's nothing at this address.</p>
-        </NotFound>
     </Layout>
 
     <Drawer Placement="Placement.Right" @bind-IsOpen="@IsOpen" IsBackdrop="true">
@@ -95,6 +96,12 @@
                     </div>
                     <div class="col-6">
                         <span class="cell-label">固定标签页</span>
+                    </div>
+                    <div class="col-6">
+                        <Switch @bind-Value="@ShowTabInHeader" OnColor="@Color.Success"></Switch>
+                    </div>
+                    <div class="col-6">
+                        <span class="cell-label">@(ShowTabInHeader ? "顶栏标签" : "正常标签")</span>
                     </div>
                 </div>
             </GroupBox>
