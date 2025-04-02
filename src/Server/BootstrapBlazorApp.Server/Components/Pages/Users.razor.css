@@ -9,7 +9,7 @@
 }
 
 ::deep .table-users {
-    height: calc(100% - 93px);
+    height: calc(100% - 51px - var(--bb-demo-tab-header-height, 0px));
 }
 
 ::deep .table-cell img {
