@@ -17,6 +17,8 @@ public partial class MainLayout
 
     private bool ShowFooter { get; set; } = true;
 
+    private bool ShowTabInHeader { get; set; } = true;
+
     private List<MenuItem>? Menus { get; set; }
 
     /// <summary>

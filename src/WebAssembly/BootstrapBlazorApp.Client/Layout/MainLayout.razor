@@ -5,6 +5,7 @@
             IsPage="true" IsFullSide="@IsFullSide" IsFixedHeader="@IsFixedHeader" IsFixedFooter="@IsFixedFooter"
             ShowSplitebar="true" SidebarMinWidth="200" SidebarMaxWidth="350"
             TabStyle="TabStyle.Chrome" ShowToolbar="true" ShowTabContextMenu="true"
+            ShowTabInHeader="@ShowTabInHeader" ShowTabExtendButtons="false"
             TabDefaultUrl="/" UseTabSet="@UseTabSet" IsFixedTabHeader="IsFixedTabHeader" AdditionalAssemblies="new[] { GetType().Assembly }"
             Menus="@Menus" class="@Theme">
         <Header>
@@ -75,6 +76,12 @@
                     </div>
                     <div class="col-6">
                         <span class="cell-label">显示页脚</span>
+                    </div>
+                    <div class="col-6">
+                        <Switch @bind-Value="@ShowTabInHeader" OnColor="@Color.Success"></Switch>
+                    </div>
+                    <div class="col-6">
+                        <span class="cell-label">@(ShowTabInHeader ? "顶栏标签" : "正常标签")</span>
                     </div>
                 </div>
             </GroupBox>
