@@ -102,6 +102,12 @@
                     <div class="col-6">
                         <span class="cell-label">固定标签页</span>
                     </div>
+                    <div class="col-6">
+                        <Switch @bind-Value="@ShowTabInHeader" OnColor="@Color.Success"></Switch>
+                    </div>
+                    <div class="col-6">
+                        <span class="cell-label">@(ShowTabInHeader ? "顶栏标签" : "正常标签")</span>
+                    </div>
                 </div>
             </GroupBox>
         </div>
