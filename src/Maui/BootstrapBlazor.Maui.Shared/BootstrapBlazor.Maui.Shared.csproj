@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Locales\en.json" />
+    <Content Remove="Locales\zh.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Locales\en.json" />
+    <EmbeddedResource Include="Locales\zh.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BootstrapBlazor" Version="9.5.3" />
+    <PackageReference Include="BootstrapBlazor.FontAwesome" Version="9.*" />
+    <PackageReference Include="BootstrapBlazor.Html2Pdf" Version="9.*" />
+    <PackageReference Include="BootstrapBlazor.TableExport" Version="9.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.3" />
+  </ItemGroup>
+
+</Project>
