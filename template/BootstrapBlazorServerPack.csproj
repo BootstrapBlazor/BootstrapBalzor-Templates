@@ -25,6 +25,7 @@
     <Content Include="server\**\*" Exclude="server\**\obj\**\*;server\**\bin\**\*;server\**\.vs\**\*" />
     <Content Include="webassembly\**\*" Exclude="webassembly\**\obj\**\*;webassembly\**\bin\**\*;webassembly\**\.vs\**\*" />
     <Content Include="wasm\**\*" Exclude="wasm\**\obj\**\*;wasm\**\bin\**\*;wasm\**\.vs\**\*" />
+    <Content Include="maui\**\*" Exclude="maui\**\obj\**\*;maui\**\bin\**\*;maui\**\.vs\**\*" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
