@@ -16,6 +16,9 @@ rd /Q /S %targetDir%Auto-per\BootstrapBlazorApp.Client
 rd /Q /S %targetDir%Server\BootstrapBlazorApp.Server
 rd /Q /S %targetDir%WebAssembly\BootstrapBlazorApp
 rd /Q /S %targetDir%WebAssembly\BootstrapBlazorApp.Client
+rd /Q /S %targetDir%Wasm\BootstrapBlazorApp
+rd /Q /S %targetDir%Maui\BootstrapBlazor.Maui
+rd /Q /S %targetDir%Maui\BootstrapBlazor.Maui.Shared
 
 rd /Q /S %sourceDir%\Auto\BootstrapBlazorApp\bin
 rd /Q /S %sourceDir%\Auto\BootstrapBlazorApp\obj
@@ -37,6 +40,11 @@ rd /Q /S %sourceDir%\WebAssembly\BootstrapBlazorApp.Client\obj
 rd /Q /S %sourceDir%\Wasm\BootstrapBlazorApp\bin
 rd /Q /S %sourceDir%\Wasm\BootstrapBlazorApp\obj
 
+rd /Q /S %sourceDir%\Maui\BootstrapBlazor.Maui\bin
+rd /Q /S %sourceDir%\Maui\BootstrapBlazor.Maui\obj
+rd /Q /S %sourceDir%\Maui\BootstrapBlazor.Maui.Shared\bin
+rd /Q /S %sourceDir%\Maui\BootstrapBlazor.Maui.Shared\obj
+
 xcopy %sourceDir%\Auto\*.* %targetDir%auto /S /R /Y
 xcopy %sourceDir%\.editorconfig %targetDir%auto /Y
 
@@ -51,5 +59,8 @@ xcopy %sourceDir%\.editorconfig %targetDir%webassembly /Y
 
 xcopy %sourceDir%\Wasm\*.* %targetDir%Wasm /S /R /Y
 xcopy %sourceDir%\.editorconfig %targetDir%Wasm /Y
+
+xcopy %sourceDir%\Maui\*.* %targetDir%Maui /S /R /Y
+xcopy %sourceDir%\.editorconfig %targetDir%Maui /Y
 
 echo Sync success!
