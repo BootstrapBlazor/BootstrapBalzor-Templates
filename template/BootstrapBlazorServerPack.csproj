@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageVersion>9.1.6</PackageVersion>
+    <PackageVersion>9.1.7</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup>
