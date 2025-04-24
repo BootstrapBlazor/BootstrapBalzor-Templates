@@ -21,11 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BootstrapBlazor" Version="9.5.3" />
+    <PackageReference Include="BootstrapBlazor" Version="9.*" />
     <PackageReference Include="BootstrapBlazor.FontAwesome" Version="9.*" />
     <PackageReference Include="BootstrapBlazor.Html2Pdf" Version="9.*" />
     <PackageReference Include="BootstrapBlazor.TableExport" Version="9.*" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.*" />
   </ItemGroup>
 
 </Project>
