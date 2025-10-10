@@ -1,4 +1,12 @@
-﻿.layout-drawer-body ::deep .groupbox {
+﻿.layout-drawer {
+    margin-inline-start: .5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.layout-drawer-body ::deep .groupbox {
     margin-top: 1rem;
 }
 
