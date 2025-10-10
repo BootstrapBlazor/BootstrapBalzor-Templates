@@ -1,0 +1,39 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/scripts/">
+    <File Path=".github/workflows/pack.yml" />
+  </Folder>
+  <Folder Name="/scripts/windows/">
+    <File Path="scripts/sync.cmd" />
+    <File Path="scripts/sync.sh" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Auto-Per/">
+    <Project Path="src/Auto-Per/BootstrapBlazorApp.Client/BootstrapBlazorApp.Client.csproj" />
+    <Project Path="src/Auto-Per/BootstrapBlazorApp/BootstrapBlazorApp.csproj" />
+  </Folder>
+  <Folder Name="/src/Auto/">
+    <Project Path="src/Auto/BootstrapBlazorApp.Client/BootstrapBlazorApp.Client.csproj" />
+    <Project Path="src/Auto/BootstrapBlazorApp/BootstrapBlazorApp.csproj" />
+  </Folder>
+  <Folder Name="/src/Maui/">
+    <Project Path="src/Maui/BootstrapBlazor.Maui.Shared/BootstrapBlazor.Maui.Shared.csproj" />
+    <Project Path="src/Maui/BootstrapBlazor.Maui/BootstrapBlazor.Maui.csproj" />
+  </Folder>
+  <Folder Name="/src/Server/">
+    <Project Path="src/Server/BootstrapBlazorApp.Server/BootstrapBlazorApp.Server.csproj" />
+  </Folder>
+  <Folder Name="/src/Wasm/">
+    <Project Path="src/Wasm/BootstrapBlazorApp/BootstrapBlazorApp.csproj" />
+  </Folder>
+  <Folder Name="/src/WebAssembly/">
+    <Project Path="src/WebAssembly/BootstrapBlazorApp.Client/BootstrapBlazorApp.Client.csproj" />
+    <Project Path="src/WebAssembly/BootstrapBlazorApp/BootstrapBlazorApp.csproj" />
+  </Folder>
+  <Folder Name="/template/">
+    <Project Path="template/BootstrapBlazorServerPack.csproj" />
+  </Folder>
+</Solution>
