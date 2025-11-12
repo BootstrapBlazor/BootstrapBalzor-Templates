@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -21,11 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BootstrapBlazor" Version="9.*" />
-    <PackageReference Include="BootstrapBlazor.FontAwesome" Version="9.*" />
-    <PackageReference Include="BootstrapBlazor.Html2Pdf" Version="9.*" />
-    <PackageReference Include="BootstrapBlazor.TableExport" Version="9.*" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.*" />
+    <PackageReference Include="BootstrapBlazor" Version="10.*" />
+    <PackageReference Include="BootstrapBlazor.FontAwesome" Version="10.*" />
+    <PackageReference Include="BootstrapBlazor.Html2Pdf" Version="10.*" />
+    <PackageReference Include="BootstrapBlazor.TableExport" Version="10.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.*" />
   </ItemGroup>
 
 </Project>

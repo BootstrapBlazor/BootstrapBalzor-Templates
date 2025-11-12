@@ -21,7 +21,9 @@
   </Folder>
   <Folder Name="/src/Maui/">
     <Project Path="src/Maui/BootstrapBlazor.Maui.Shared/BootstrapBlazor.Maui.Shared.csproj" />
-    <Project Path="src/Maui/BootstrapBlazor.Maui/BootstrapBlazor.Maui.csproj" />
+    <Project Path="src/Maui/BootstrapBlazor.Maui/BootstrapBlazor.Maui.csproj">
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
   </Folder>
   <Folder Name="/src/Server/">
     <Project Path="src/Server/BootstrapBlazorApp.Server/BootstrapBlazorApp.Server.csproj" />
